@@ -116,6 +116,28 @@ export const mapo = defineChain({
   },
 });
 
+export const mapo = defineChain({
+  id: 2020,
+  name: "RONIN",
+  network: "Ronin Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "RON",
+    symbol: "RON",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://api.roninchain.com/rpc"],
+    },
+    public: {
+      http: ["https://api.roninchain.com/rpc"],
+    },
+  },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://app.roninchain.com/" },
+  },
+});
+
 export const inscriptionChains = {
   eth: mainnet,
   bsc,
